@@ -5,9 +5,9 @@ export const Navigation = (props) => {
     <nav
       id="menu"
       className="navbar navbar-default navbar-fixed-top"
-      style={{ backgroundColor: "green" }}
+      style={{}}
     >
-      <div className="container" style={{ backgroundColor: "blue" }}>
+      <div className="container" style={{}}>
         <div
           className="navbar-header"
           style={{
@@ -21,7 +21,6 @@ export const Navigation = (props) => {
             style={{
               display: "flex",
               alignItems: "flex-start",
-              backgroundColor: "brown",
             }}
           >
             <img
@@ -29,8 +28,7 @@ export const Navigation = (props) => {
               alt="Home Icon"
               style={{
                 width: "100%",
-                height: "50px",
-                backgroundColor: "red",
+                height: "60px",
               }}
             />
           </a>
@@ -41,16 +39,10 @@ export const Navigation = (props) => {
           id="bs-example-navbar-collapse-1"
           style={{
             display: "flex",
-            backgroundColor: "orange",
             alignItems: "flex-end",
           }}
         >
           <ul className="nav navbar-nav navbar-right">
-            <li>
-              <a href="#features" className="page-scroll">
-                Features
-              </a>
-            </li>
             <li>
               <a href="#about" className="page-scroll">
                 Acerca de
@@ -59,16 +51,6 @@ export const Navigation = (props) => {
             <li>
               <a href="#services" className="page-scroll">
                 Servicios
-              </a>
-            </li>
-            <li>
-              <a href="#portfolio" className="page-scroll">
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonios
               </a>
             </li>
             <li>
