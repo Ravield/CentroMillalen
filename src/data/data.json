@@ -30,42 +30,42 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpeg",
+      "img": "img/team/01.png",
       "name": "Alejandra Fernández",
       "job": "Directora"
     },
     {
-      "img": "img/team/02.jpeg",
+      "img": "img/team/02.png",
       "name": "Anais Poblete",
       "job": "Trabajadora Social"
     },
     {
-      "img": "img/team/03.jpeg",
+      "img": "img/team/03.png",
       "name": "Danila Fonseca",
       "job": "Psicologa"
     },
     {
-      "img": "img/team/04.jpeg",
+      "img": "img/team/04.png",
       "name": "Karla Baez",
       "job": "Psicologa"
     },
     {
-      "img": "img/team/05.jpeg",
+      "img": "img/team/05.png",
       "name": "Macarena Mercegue",
       "job": "Trabajadora Social"
     },
     {
-      "img": "img/team/06.jpeg",
+      "img": "img/team/06.png",
       "name": "Natalia Angulo",
       "job": "Nutricionista"
     },
     {
-      "img": "img/team/07.jpeg",
+      "img": "img/team/07.png",
       "name": "Raisa Salas",
       "job": "Psicopedagoga"
     },
     {
-      "img": "img/team/08.jpeg",
+      "img": "img/team/08.png",
       "name": "Valentina Araya",
       "job": "Abogada"
     }
