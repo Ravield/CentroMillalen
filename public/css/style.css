@@ -106,7 +106,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #c69608 0%, #edcd55 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -127,7 +127,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: linear-gradient(to right, #c69608 0%, #edcd55 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -210,7 +210,7 @@ a:focus,
   display: table;
   width: 100%;
   padding: 0;
-  background: url(../img/HomeIcon.png) center center no-repeat;
+  background: url(../img/HomePng.jpeg) center center no-repeat;
   background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -218,7 +218,7 @@ a:focus,
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.6);
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
@@ -245,6 +245,9 @@ header .intro-text {
   padding-top: 350px;
   padding-bottom: 200px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* Features Section */
 #features {
@@ -278,7 +281,7 @@ header .intro-text {
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(to right, #c69608 0%, #edcd55 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -312,7 +315,7 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #c69608 0%, #edcd55 100%);
   color: #fff;
 }
 #services .service-desc {
@@ -331,13 +334,15 @@ header .intro-text {
   margin-left: -30px;
   left: 50%;
 }
-#services i.fa {
+#services svg.fa {
   font-size: 42px;
-  width: 120px;
-  height: 120px;
-  padding: 40px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  width: 60px;
+  height: 60px;
+  padding: 40px;
+  background: linear-gradient(to right, #c69608 0%, #edcd55 100%);
   border-radius: 50%;
+  border-color: #fff;
+  outline: solid;
   color: #fff;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
@@ -459,10 +464,15 @@ header .intro-text {
   padding: 10px 0 0;
   color: #888;
 }
+
+#team h2::after {
+  background: linear-gradient(to right, #c69608 0%, #edcd55 100%);
+}
+
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #c69608 0%, #edcd55 100%);
   color: rgba(255, 255, 255, 0.75);
 }
 #contact .section-title {
@@ -558,7 +568,7 @@ label {
   margin-bottom: 10px;
   display: block;
 }
-#contact .contact-item i.fa {
+#contact .contact-item svg.fa {
   margin-right: 10px;
 }
 #contact .social {
@@ -571,20 +581,29 @@ label {
   display: inline-block;
   margin: 0 20px;
 }
-#contact .social i.fa {
+#contact .social svg.fa {
   font-size: 22px;
-  width: 48px;
-  height: 48px;
-  padding: 12px 0;
+  width: 25px;
+  height: 25px;
+  padding: 12px;
   border: 2px solid #fff;
   color: #fff;
   border-radius: 50%;
   transition: all 0.3s;
 }
-#contact .social i.fa:hover {
-  color: #608dfd;
+#contact .social svg.fa.facebook:hover {
+  color: #2c4986;
   background: #fff;
 }
+#contact .social svg.fa.twitter:hover {
+  color: #1da1f2;
+  background: #fff;
+}
+#contact .social svg.fa.instagram:hover {
+  color: #f10f8f;
+  background: #fff;
+}
+
 /* Footer Section*/
 #footer {
   background: #f6f6f6;

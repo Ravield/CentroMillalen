@@ -7,6 +7,13 @@ import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faBrain,
+  faScaleBalanced,
+  faUsers,
+  faHandHoldingMedical,
+} from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -18,6 +25,7 @@ const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
+    library.add(faBrain, faScaleBalanced, faUsers, faHandHoldingMedical);
   }, []);
 
   return (

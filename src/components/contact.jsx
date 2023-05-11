@@ -1,4 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope,
+  faLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const Contact = (props) => {
   return (
@@ -14,7 +21,8 @@ export const Contact = (props) => {
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-map-marker"></i> Dirección
+                    <FontAwesomeIcon className="fa" icon={faLocationDot} />{" "}
+                    Dirección
                   </span>
                   {props.data ? props.data.address : "loading"}
                 </p>
@@ -22,7 +30,8 @@ export const Contact = (props) => {
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-phone"></i> Telefono-Celular
+                    <FontAwesomeIcon className="fa" icon={faPhone} />{" "}
+                    Telefono-Celular
                   </span>{" "}
                   {props.data ? props.data.phone : "loading"}
                 </p>
@@ -30,7 +39,8 @@ export const Contact = (props) => {
               <div className="contact-item">
                 <p>
                   <span>
-                    <i className="fa fa-envelope-o"></i> Correo electronico
+                    <FontAwesomeIcon className="fa" icon={faEnvelope} /> Correo
+                    electronico
                   </span>{" "}
                   {props.data ? props.data.email : "loading"}
                 </p>
@@ -43,17 +53,18 @@ export const Contact = (props) => {
                 <ul>
                   <li>
                     <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
+                      <FontAwesomeIcon
+                        className="fa facebook"
+                        icon={faFacebook}
+                      />
                     </a>
                   </li>
                   <li>
                     <a href={props.data ? props.data.instagram : "/"}>
-                      <i className="fa fa-instagram"></i>
+                      <FontAwesomeIcon
+                        className="fa instagram"
+                        icon={faInstagram}
+                      />
                     </a>
                   </li>
                 </ul>
